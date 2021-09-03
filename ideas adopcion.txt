@@ -1,0 +1,9 @@
+"quiero dar en adopcion"
+*DUEÑO DE MASCOTA*
+- solamente se deben contemplar las pantallas desde la perspectiva de un dueño de mascota.
+- cada asociación/organización puede realizar sus propias preguntas sobre la mascota para así generar una publicación detallada
+- se debe considerar que ciertas preguntas siempre (sin importar la organización) deben ser contestadas
+
+*INTERESADO DE LA MASCOTA*
+- si encuentra alguna mascota apropiada entre las publicaciones ==>  el sistema deberá notificarle de esta situación, por los medios preferidos de notificación, al actual dueño de la mascota para así entablar una conversación
+- si no encuentra ==> puede generar una publicación para mostrar su interés de hacerlo (se le preguntan preferencias y comodidades), el sistema le manda un mail con un link para dar de baja esta publicacion cuando lo desee

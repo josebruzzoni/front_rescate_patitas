@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+<h1 style="text-align:center">Nombre del sistema</h1>
+</header>
+
+<section>
+<article>
+
+<label for="nombre">Nombre por el cual será llamado</label>
+<input type="text" name="nombre" autofocus required><br/>
+
+<fieldset>
+	<legend>Forma de contacto</legend>
+	<label for="tipo_contacto">Tipo de contacto</label><br/>
+	<input type="radio" name="tipo_contacto" value="Telefono"> <label>Telefono</label><br/>
+	<input type="radio" name="tipo_contacto" value="Email"> <label>Email</label><br/><br/>
+
+	<label for="tipo_notificacion">Tipo de Notificación</label><br/>
+	<input type="radio" name="tipo_notificacion" value="Whatsapp"> <label>Whatsapp</label><br/>
+	<input type="radio" name="tipo_notificacion" value="Mail"> <label>Mail</label><br/>
+	<input type="radio" name="tipo_notificacion" value="SMS"> <label>SMS</label><br/>
+
+</fieldset>
+
+<form action="log_in.html">
+    <button type="submit">Guardar</button>
+</form>
+<form action="registro.html">
+    <button type="submit">Atras</button>
+</form>
+
+</article>
+</section>

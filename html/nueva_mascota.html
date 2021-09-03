@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+<h1 style="text-align:center">Nombre del sistema</h1>
+</header>
+
+<section>
+<article>
+
+<fieldset>
+<legend>Información acerca de la mascota</legend>
+
+<label for="nombre">Nombre</label>
+<input type="text" name="nombre" autofocus required><br/>
+
+<label for="apodo">Apodo</label>
+<input type="text" name="apodo" autofocus required><br/>
+
+<label for="edad_aprox">Edad aproximada</label>
+<input type="number" name="edad_aprox" min="1" max="25" step="1"><br/>
+
+<label for="descripcion">Descripción física</label>
+<input type="text" name="descripcion" autofocus required><br/>
+
+<fieldset>
+	<legend>Sexo</legend>
+	<input type="radio" name="sexo" value="Macho"> <label>Macho</label><br/>
+	<input type="radio" name="sexo" value="Hembra"> <label>Hembra</label><br/>
+</fieldset>
+
+<fieldset>
+	<legend>Tipo de animal</legend>
+	<input type="radio" name="tipo" value="Gato"> <label>Gato</label><br/>
+	<input type="radio" name="tipo" value="Perro"> <label>Perro</label><br/>
+</fieldset>
+
+<fieldset>
+	<legend>Información adicional por parte de la asociación</legend>
+</fieldset>
+
+</fieldset>
+
+<form action="menu_asociacion.html">
+    <button type="submit">Guardar</button>
+</form>
+
+</article>
+</section>
+
+</body>
