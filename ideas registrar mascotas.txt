@@ -1,7 +1,0 @@
-"Quiero registrar a mi mascota"
-- Cuando una persona registra a su mascota, se le envía una “chapita” identificatoria a su domicilio que contiene grabado un código QR.
-- Datos a completar por parte del usuario: nombre completo, fecha nacimiento, tipo y nro documento, al menos un dato de contacto (nombre completo, telefono, email, formas de notificacion: mail, wpp, sms)
-- Datos a completar por parte de la mascota: tipo animal (gato, perro, etc), nombre, apodo, edad aproximada, sexo, descripcion fisica, fotos, caracteristicas opcionales (color principal, esta castrada, etc...)
-- Las caracteristicas opcionales de las mascotas son seleccionadas dependiendo de cada organizacion.
-- Fotos deben ser normalizadas a un tamaño estandar por cada organizacion, junto con su calidad.
-- Se le debe ofrecer la posibilidad de generar un usuario al dueño de la mascota: ofrecer pantalla para registrarse en el sistema, pero un usuario queda ligado a una organizacion si tiene un rol como voluntario o administrador.

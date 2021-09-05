@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="testbox">
+        <form action="/">
+            <h1>*Nombre asociación* - Registrar nueva persona</h1>
+            <br>
+
+
+            <fieldset>
+                <legend>Información acerca de la persona dueña de la mascota</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" autofocus required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" autofocus required><br/>
+
+                <label for="documento">Documento</label><br/>
+                <div class="title-block">
+                    <select name="tipo_documento">
+						<option value="dni">DNI</option> 
+						<option value="cuil">CUIL</option> 
+					</select>
+                    <input type="number" placeholder="Nro de documento" name="nro_documento" autofocus required><br/>
+                </div>
+
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input type="date"><br/>
+            </fieldset>
+            <br>
+
+            <div style="float: right; margin: 5px">
+                <button href="medio_contacto_por_nueva_persona.html" type="submit">Siguiente</button>
+            </div>
+            <div style="float: right; margin: 5px">
+                <button href="menu_asociacion.html" type="submit">Atras</button>
+            </div>
+
+
+        </form>
+    </div>

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Rescate de patitas: admin</title>
+    <title>Organización: admin</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <style>
@@ -54,7 +54,9 @@
         }
         
         form {
-            width: 100%;
+            width: 80%;
+            margin-bottom: 20px;
+            border-radius: 5px;
             padding: 20px;
             background: #fff;
             box-shadow: 0 2px 5px #ccc;
@@ -207,115 +209,74 @@
 
 <body>
     <div class="testbox">
-        <form action="/">
-            <h1>Rescate de patitas: administración</h1>
+        <form>
+            <h1>Organización: administración</h1>
             <hr>
-            <h3>Permisos</h3>
-            <h4>Alta</h4>
-            <div class="title-block">
+            <div class="row">
 
-                <input class="name" type="text" name="name" placeholder="Nuevo nombre" />
-                <button> Crear </button>
+                <div>
+
+                    <h3>Características de la mascota</h3>
+                    <h4>Alta</h4>
+                    <div class="title-block">
+
+                        <input class="name" type="text" name="name" placeholder="Nueva característica" />
+                        <button> Crear </button>
+                    </div>
+                    <h4>Baja</h4>
+                    <div class="title-block">
+                        <select>
+                            <option value=""></option>
+                            <option value="">Color</option>
+                            <option value="2">Raza</option>
+                            <option value="3">Peso</option>
+                            <option value="4">Agresivo</option>
+                        </select>
+                        <button>Eliminar</button>
+                    </div>
+                    <h4>Modificacion</h4>
+                    <div class="title-block">
+                        <select>
+                            <option value=""></option>
+                            <option value="">Color</option>
+                            <option value="2">Raza</option>
+                            <option value="3">Peso</option>
+                            <option value="4">Agresivo</option>
+                        </select>
+                        <input class="name" type="text" name="name" placeholder="Editar característica" />
+                        <button>Editar nombre</button>
+                    </div>
+                </div>
+                <div>
+
+                    <h3>Preguntas adopción</h3>
+                    <h4>Alta</h4>
+                    <div class="title-block">
+
+                        <input class="name" type="text" name="name" placeholder="Nueva pregunta" />
+                        <button> Crear </button>
+                    </div>
+                    <h4>Baja</h4>
+                    <div class="title-block">
+                        <select>
+                            <option value=""></option>
+                            <option value="">Por qué desea dar en adopción a tu mascota?</option>
+                            <option value="2">Planea adoptar otra mascota?</option>
+                        </select>
+                        <button>Eliminar</button>
+                    </div>
+                    <h4>Modificacion</h4>
+                    <div class="title-block">
+                        <select>
+                            <option value=""></option>
+                            <option value="">Por qué desea dar en adopción a tu mascota?</option>
+                            <option value="2">Planea adoptar otra mascota?</option>
+                        </select>
+                        <input class="name" type="text" name="name" placeholder="Editar pregunta" />
+                        <button>Editar nombre</button>
+                    </div>
+                </div>
             </div>
-            <h4>Baja</h4>
-            <div class="title-block">
-                <select>
-                    <option value=""></option>
-                    <option value="">Permiso 1</option>
-                    <option value="2">Complaint</option>
-                    <option value="3">Compliment</option>
-                    <option value="4">Suggestion</option>
-                </select>
-                <button>Eliminar</button>
-            </div>
-            <h4>Modificacion</h4>
-            <div class="title-block">
-                <select>
-                    <option value=""></option>
-                    <option value="">Permiso 1</option>
-                    <option value="2">Complaint</option>
-                    <option value="3">Compliment</option>
-                    <option value="4">Suggestion</option>
-                </select>
-                <input class="name" type="text" name="name" placeholder="Nuevo nombre" />
-                <button>Editar nombre</button>
-            </div>
-            <br>
-            <hr>
-            <br>
-            <h3>Características de la mascota</h3>
-            <h4>Alta</h4>
-            <div class="title-block">
-
-                <input class="name" type="text" name="name" placeholder="Nuevo nombre" />
-                <button> Crear </button>
-            </div>
-            <h4>Baja</h4>
-            <div class="title-block">
-                <select>
-                    <option value=""></option>
-                    <option value="">Permiso 1</option>
-                    <option value="2">Complaint</option>
-                    <option value="3">Compliment</option>
-                    <option value="4">Suggestion</option>
-                </select>
-                <button>Eliminar</button>
-            </div>
-            <h4>Modificacion</h4>
-            <div class="title-block">
-                <select>
-                    <option value=""></option>
-                    <option value="">Permiso 1</option>
-                    <option value="2">Complaint</option>
-                    <option value="3">Compliment</option>
-                    <option value="4">Suggestion</option>
-                </select>
-                <input class="name" type="text" name="name" placeholder="Nuevo nombre" />
-                <button>Editar nombre</button>
-            </div>
-
-
-
-
-
-
-
-
-            <!-- <h4>Feedback/Enquiry on<span>*</span></h4>
-            <select>
-          <option value=""></option>
-          <option value="1">Credit and Debit Cards</option>
-          <option value="2">Deposit</option>
-          <option value="3">Housing and Renovation Loan</option>
-          <option value="4">iBanking</option>
-          <option value="5">Treasures</option>
-        </select>
-            <h4>Name<span>*</span></h4>
-            <div class="title-block">
-                <select>
-            <option value="title" selected>Title</option>
-            <option value="ms">Ms</option>
-            <option value="miss">Miss</option>
-            <option value="mrs">Mrs</option>
-            <option value="mr">Mr</option>
-          </select>
-                <input class="name" type="text" name="name" placeholder="First" />
-                <input class="name" type="text" name="name" placeholder="Last" />
-            </div>
-            <h4>Email Address<span>*</span></h4>
-            <input type="text" name="name" />
-            <h4>Contact Number<span>*</span></h4>
-            <input type="text" name="name" />
-            <h4>Name of Staff who served me</h4>
-            <input type="text" name="name" />
-            <h4>Branch visited</h4>
-            <input type="text" name="name" />
-            <h4>Feedback/Enquiry</h4>
-            <p class="small">Please do not indicate your account or credit card number and banking instruction in your comments. Thank you for your time and valuable feedback.</small>
-                <textarea rows="5"></textarea>
-                <div class="btn-block">
-                    <button type="submit" href="/">Send Feedback</button>
-                </div> -->
         </form>
     </div>
 </body>

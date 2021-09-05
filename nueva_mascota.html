@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+
+
+    <div class="testbox">
+        <form action="/">
+            <h1>*Nombre asociación - Registro mascota*</h1>
+
+            <br>
+
+            <fieldset>
+                <h3>Información acerca de la mascota</h3>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" autofocus required><br/>
+
+                <label for="apodo">Apodo</label>
+                <input type="text" name="apodo" autofocus required><br/>
+
+                <label for="edad_aprox">Edad aproximada</label>
+                <input type="number" name="edad_aprox" min="1" max="25" step="1"><br/>
+
+                <label for="descripcion">Descripción física</label>
+                <input type="text" name="descripcion" autofocus required><br/>
+
+                <h4>Sexo</h4>
+                <div class="title-block">
+                    <select>
+                	<option value=""></option>
+                    <option value="1">Macho</option>
+                    <option value="2">Hembra</option>
+                </select>
+                </div>
+
+                <h4>Tipo de animal</h4>
+                <div class="title-block">
+                    <select>
+                	<option value=""></option>
+                    <option value="1">Gato</option>
+                    <option value="2">Perro</option>
+                </select>
+                </div>
+
+                <h4>Caracteristicas</h4>
+                <div class="title-block">
+                    <select>
+						<option value=""></option>
+                            <option value="">Color</option>
+                            <option value="2">Raza</option>
+                            <option value="3">Peso</option>
+                            <option value="4">Agresivo</option>
+					</select>
+                    <input type="text" name="ValorCaracteristica" placeholder="Valor de la característica" autofocus required><br/>
+                    <button>Agregar</button>
+                </div>
+
+                <h4>Fotos:</h4>
+                <input type="file">Seleccionar archivo</a>
+
+                <!-- <h3>Información adicional acerca de la mascota</h3>
+                <h5>Pregunta_1</h5>
+                <h5>Pregunta_2</h5>
+                <h5>Pregunta_3</h5> -->
+
+            </fieldset>
+            <div style="float: right; margin: 5px">
+                <button href="menu_asociacion.html" type="submit">Guardar</button>
+            </div>
+
+        </form>
+    </div>
+</body>
