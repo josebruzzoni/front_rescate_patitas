@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos2.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+var current = 0;
+var imagenes = new Array();
+ 
+$(document).ready(function() {
+    var numImages = 6;
+    if (numImages <= 3) {
+        $('.right-arrow').css('display', 'none');
+        $('.left-arrow').css('display', 'none');
+    }
+ 
+    $('.left-arrow').on('click',function() {
+        if (current > 0) {
+            current = current - 1;
+        } else {
+            current = numImages - 3;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+ 
+        return false;
+    });
+ 
+    $('.left-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+ 
+    $('.right-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+ 
+    $('.right-arrow').on('click', function() {
+        if (numImages > current + 3) {
+            current = current+1;
+        } else {
+            current = 0;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+ 
+        return false;
+    }); 
+ });
+</script>
+</head>
+
+<body>
+
+    <div class="testbox">
+        <form action="/">
+            <h1>Publicación mascota perdida</h1>
+            <br>
+
+
+            <fieldset>
+                <legend>Mascota 1</legend>
+
+                <label for="nombre">Apodo: perrito con camiseta de boke</label><br/>
+                <label for="estado">Estado de la mascota: se encontró en buen estado</label><br/>
+                <label for="lugar">Se encontró en la zona: Cabildo y Juramento</label><br/>
+                
+		<div id="carrusel">
+    <a href="#" class="left-arrow"><img src="flecha_der.png" width="50px" height="50px" /></a>
+    <a href="#" class="right-arrow"><img src="flecha_izq.png" width="50px" height="50px" /></a>
+    <div class="carrusel">
+        <div class="product" id="product_0">
+            <img src="foto_perro1.jpg" alt="Mascota2" width="200px" height="200px">
+        </div>
+        <div class="product" id="product_1">
+            <img src="foto_perro1.jpg" alt="Mascota2" width="200px" height="200px">
+        </div>
+        <div class="product" id="product_2">
+            <img src="foto_perro1.jpg" alt="Mascota2" width="200px" height="200px">
+        </div>
+         <div class="product" id="product_3">
+            <img src="foto_perro1.jpg" alt="Mascota2" width="200px" height="200px">
+        </div>
+         <div class="product" id="product_4">
+            <img src="foto_perro1.jpg" alt="Mascota2" width="200px" height="200px">
+        </div>
+    </div>
+</div>
+
+            </fieldset>
+            <br>
+        </form>
+    </div>
+     <div style="float: right; margin: 5px">
+                <button type="submit">Aprobar publicación</button>
+            </div>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos2.css">
+</head>
+
+<body>
+
+    <div class="testbox">
+        <form action="/">
+            <h1>Completar formulario - Mascota perdida</h1>
+            <br>
+
+
+            <fieldset>
+                <legend>Ingrese sus datos</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" autofocus required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" autofocus required><br/>
+
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input type="date"><br/>
+
+                <label for="documento">Documento</label><br/>
+                <div class="title-block">
+                    <select name="tipo_documento">
+						<option value="dni">DNI</option> 
+						<option value="cuil">CUIL</option> 
+					</select>
+                    <input type="number" placeholder="Nro de documento" name="nro_documento" autofocus required><br/>
+                </div>
+
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" autofocus required>
+
+                <br>
+                <br>
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <br>
+                    <div class="info-text">
+
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" autofocus required><br/>
+
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" autofocus required><br/>
+
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" name="telefono" autofocus required><br/>
+
+                        <label for="email">Email</label>
+                        <input type="text" name="email" autofocus required><br/>
+
+                        <legend>Forma de Notificación</legend>
+                        <div>
+                            <select>
+                    <option value=""></option>
+                    <option value="">Whatsapp</option>
+                    <option value="2">SMS</option>
+                    <option value="3">Mail</option>
+                </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="nombre">Información de contacto: </label>
+                            <input type="text" name="nombre" autofocus required><br/>
+                        </div>
+        </form>
+        <br>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Ingrese los datos sobre la mascota perdida</legend>
+
+            <label for="foto">Fotos: </label>
+            <input type="file" name="Seleccionar archivo"><br/>
+
+            <label for="descripcion">Indique el estado en el cual la encontró: </label>
+            <input type="text" name="descripcion" style="min-height: 100px; width: 95%" autofocus required><br/>
+
+            <label for="direccion">Indique el lugar donde la encontró: </label>
+            <input type="text" name="direccion" autofocus required> &nbsp;
+
+            <div class="map-responsive"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26096862.273696493!2d-81.64869164831863!3d-37.01809447681349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2sar!4v1630968689070!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            </form>
+            <br>
+
+            <div style="float: right; margin: 5px">
+                <button type="submit">Enviar formulario</button>
+            </div>
+        </fieldset>
+        <br>
+        </form>
+        <br>
+
+        </div>
